@@ -16,7 +16,30 @@ const Data = ({ title, body }) => {
             <div className='acordion-title'>
 
                 {showCont ? (
-                   <div> 
+                    <div>
+                        <div class="container">
+                            <div class="first-element" >
+
+                                <h2>{title}</h2>
+
+                            </div>
+                            <div class="second-element" >
+
+                                <p><FcCollapse /></p>
+
+                            </div>
+
+
+                        </div>
+
+                        <div>
+
+                            <p>{body}</p>
+                        </div>
+                    </div>
+
+
+                ) : (
                     <div class="container">
                         <div class="first-element" >
 
@@ -25,25 +48,17 @@ const Data = ({ title, body }) => {
                         </div>
                         <div class="second-element" >
 
-                            <p><FcCollapse /></p>
+                            <p><FcExpand /></p>
 
                         </div>
-                        
+
 
                     </div>
 
-                    <div>
-
-                        <p>{body}</p>
-                        </div>
-                    </div>
-                   
-
-                ) : (
-                    <div className='acordion-title'    >
-                        <h5>{title}</h5>
-                        <p ><FcExpand /></p>
-                    </div>
+                    // <div className='acordion-title'    >
+                    //     <h5>{title}</h5>
+                    //     <p ><FcExpand /></p>
+                    // </div>
                 )}
             </div>
         </div>
