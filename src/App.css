@@ -1,6 +1,7 @@
 .accordion-item{
 
   
+  
   padding: 10px;
   margin: 10px;
 
@@ -10,8 +11,37 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .acordion-title{
-
-
   display: flex;
   justify-content: space-between;
 }
+.arrow{
+  padding-left: 98%;
+}
+.side_by_side{
+
+  display: flex;
+
+}
+
+.element{
+  box-sizing: border-box; 
+  width: 100%;
+}
+
+.container {
+        display: flex;
+        justify-content: space-between; /* Spread elements apart, putting space between them */
+    }
+
+    .first-element {
+      flex: 98%; /* Takes up 90% of the container */
+  }
+  
+  .second-element {
+      flex: 2%; /* Takes up 10% of the container */
+  }
+
+  .third-element{
+     width: 100%;
+
+  }
